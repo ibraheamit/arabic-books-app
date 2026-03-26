@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary-50: #f3f6f4;
+  --color-primary-100: #e2e8e4;
+  --color-primary-500: #4A5D4E;
+  --color-primary-600: #3a4a3e;
+  --color-primary-900: #1d251f;
+
+  --color-background: #FDF9F3;
+  --font-sans: "Tajawal", system-ui, sans-serif;
+}
+
+@layer base {
+  @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap');
+
+  :root {
+    background-color: var(--color-background);
+    color: #1a1a1a;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    direction: rtl;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+  }
+}
